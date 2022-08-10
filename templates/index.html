@@ -11,7 +11,7 @@
         <ul>
             {%for order in orders%}
             <li>
-                <p>{{order.customer_name}} {{order.order_date}} {{order.quantity}} {{order.book_title}} {{order.isbn}}</p>
+                <p><a href="orders/customer/{{orders.index(order)}}">{{order.customer_name}} {{order.order_date}} {{order.quantity}} {{order.book_title}} {{order.isbn}}</a></p>
             </li>
             {%endfor%}
         </ul>
