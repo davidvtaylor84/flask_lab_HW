@@ -9,9 +9,9 @@ def bookshop():
 
 @app.route('/orders')
 def index():
-    return render_template('index.html', title='Customer Orders', orders = orders)
+    return render_template('index.html', title='Bookshop Orders', orders = orders)
 
 @app.route('/orders/customer/<int:index>/')
 def specific_orders(index):
 
-    return render_template('order.html', title = 'Bookshop Orders', orders = orders[index])
+    return render_template('order.html', title = 'Customer Orders', orders = orders[index])
